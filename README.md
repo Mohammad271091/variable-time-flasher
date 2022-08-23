@@ -1,5 +1,7 @@
 # Flasher (Arduino flasher library with variable on/off time)
 
+<img src="/imageinks.png" data-canonical-src="/imageinks.png" width="400" height="400" />
+
 The Flasher Arduino library is the best abstraction to use when you want to blink an LED (or any other digital device)
 with variable on and off times.
 Different on/off times may indicate different situations; for example, longer off time than on time may indicate the device is on and working.
