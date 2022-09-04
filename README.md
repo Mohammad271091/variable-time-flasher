@@ -8,6 +8,27 @@ equal on/off times may indicate the device is in standby mode, and so forth.
 - You can use it with Arduino, ESP8266, ESP-32 and all relevant devices.
 
 
+##What's New in v1.1.0 
+
+The ability to choose a resolution for the timer.
+The options are: MILLIS, MICROS, or SECONDS. The default value is MILLIS (milliseconds).
+
+Examples:
+
+```cpp
+// flash for 1 second on, 2 seconds off
+Flasher myled(LED_BUILTIN, 1, 2, SECONDS);
+
+//flash for 1 second on (1 million uS) and 2 seconds off (2 million uS)
+Flasher myled(LED_BUILTIN, 1000000, 2000000, MICROS);
+
+//flash for 2 seconds on (2000ms), 2 seconds off (2000ms)
+Flasher myled(LED_BUILTIN, 2000, 2000, MILLIS);
+
+//the default value is milliseconds, the line below is exactly the same as the previous
+Flasher myled(LED_BUILTIN, 2000, 2000);
+```
+
 ## Installation
 
 1. Download/clone the master branch of this repository: (https://github.com/Mohammad271091/variable-time-flasher.git)
