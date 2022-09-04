@@ -2,10 +2,16 @@
 #define Flasher_H
 #include "arduino.h"
 
+enum resolution {
+	MILLIS,
+	MICROS,
+	SECONDS
+	};
+
 class Flasher
 {
 public:
-    Flasher(int pin, unsigned long on_time, unsigned long off_time);
+    Flasher(int pin, unsigned long on_time, unsigned long off_time, resolution res = MILLIS);
     ~Flasher();
     void start();
     bool flash();
@@ -19,6 +25,7 @@ private:
     // unsigned long _off_time;
     unsigned long rememberTime = 0;
     bool flasher_on = false;
+    resolution res = MILLIS;
 };
 
 #endif
