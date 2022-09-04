@@ -8,7 +8,7 @@ equal on/off times may indicate the device is in standby mode, and so forth.
 - You can use it with Arduino, ESP8266, ESP-32 and all relevant devices.
 
 
-##What's New in v1.1.0 
+## What's New in v1.1.0 
 
 The ability to choose a resolution for the timer.
 The options are: MILLIS, MICROS, or SECONDS. The default value is MILLIS (milliseconds).
